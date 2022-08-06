@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   min-height: 4.5rem;
   align-items: flex-start;
   align-self: stretch;
@@ -13,7 +13,7 @@
 }
 
 .card p {
-  width: 100%;
+  width: 39.5rem;
   display: flex;
   align-items: center;
 }

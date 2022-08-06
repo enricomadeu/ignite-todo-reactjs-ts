@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   height: 3.375rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: space-between;  
 }
@@ -15,6 +16,10 @@
   border: 1px solid var(--gray-700);
   font-size: 1rem;
   line-height: 1.4;
+}
+
+.form button {
+  padding: 1rem;
 }
 
 .createTask {

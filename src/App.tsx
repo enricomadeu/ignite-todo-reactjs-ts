@@ -11,6 +11,8 @@ interface Tasks {
 }
 
 export function App() {
+  const [taskCount, setTaskCount] = useState(0);
+
   const [tasks, setTasks] = useState<Tasks[]>([]);
 
   function handleCheckTask(id: number){
@@ -24,10 +26,11 @@ export function App() {
 
   function handleCreateTask(task: string){
     setTasks([...tasks, {
-      id: tasks.length - 1,
+      id: taskCount,
       isActive: false,
       task,
     }]);
+    setTaskCount(prevState => prevState + 1);
   }
 
   function handleDeleteTask(id: number){
